@@ -1,0 +1,19 @@
+1. Install Go 
+1.ssh sammy@your_server_ip
+2.cd ~
+3.curl -OL https://golang.org/dl/go1.19.1.linux-amd64.tar.gz
+4. sha256sum go1.19.1.linux-amd64.tar.gz
+5.sudo tar -C /usr/local -xvf go1.19.1.linux-amd64.tar.gz
+6.sudo nano ~/.profile
+7. Add at the end : . . .
+export PATH=$PATH:/usr/local/go/bin
+8.source ~/.profile
+Check : go version 
+
+
+Create new chain : 
+1. ignite scaffold chain chainName 
+2. cd chainName
+3.ignite chain serve
+
+Create module hello world 
